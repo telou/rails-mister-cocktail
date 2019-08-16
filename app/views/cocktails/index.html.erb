@@ -19,6 +19,7 @@
 
   <div class="row">
     <% @cocktails.each do |cocktail| %>
+    <%= cl_image_tag @cocktail.photo,height: 300, width: 400, crop: :fill %>
       <div class="col-4">
         <div class="card" style="width: 20rem; height: 10rem;">
           <div class="card-body">

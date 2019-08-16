@@ -5,6 +5,8 @@
       <div class="input-group mb-3">
         <%= form_for @cocktail do |f| %>
           <%= f.text_field :name, class: 'form-control' %>
+          <%= f.input :photo %>
+          <%= f.input :photo_cache, as: :hidden %>
           <div class="input-group-append">
             <%= f.submit "add this cocktail", class: 'btn btn-primary'%>
           </div>
