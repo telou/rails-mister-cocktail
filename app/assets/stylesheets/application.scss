@@ -60,6 +60,7 @@ h1 {
     background-color: $background;
     background-clip: padding-box;
     border: 1px solid #E3A67B;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     padding-left: 10px
@@ -68,11 +69,15 @@ h1 {
 
 #search {
   background-color: $background !important;
-  border-width: 1px;
-  border-color: $pink;
   color: $pink;
-
+  border: 1px solid #E3A67B;
+  border-radius: .25rem;
+  font-family: $body-font;
+  padding: 8px;
 }
+
+
+
 
 
 

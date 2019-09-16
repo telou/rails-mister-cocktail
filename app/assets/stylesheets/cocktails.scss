@@ -2,28 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.cocktail-name {
-
-}
 
 .card-category {
-  height: 250px;
+  height: 450px;
   width: 300px;
   position: relative;
   img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
+  margin: 5px 0 5px 0;
 }
 
 .name {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  color: #E3A67B;
+  top: -5px;
+  left: -8px;
+  color: $background;
   font-size: 30px;
-  color: #E3A67B;
   font-family: 'Kaushan Script', cursive;
+  transform: rotate(-5deg);
+}
+
+.highlight {
+    background-color: $pink;
+    background-image: linear-gradient(to right, $pink 0%, $pink 100%);
+    padding: 1px 5px 1px 1px;
+    border-radius: 1px;
 }
 
 .link {
@@ -31,6 +38,8 @@
   bottom: 10px;
   right: 10px;
   margin: 0;
+  color: $background;
+  font-size: 15px;
 }
 
 .card-text {
@@ -38,10 +47,48 @@
 }
 
 #new_cocktail {
+  background-color: #DBC2A1;
+  color: $background;
+  padding: 20px;
+  border-radius: 20px;
+}
 
+#cocktail_name {
+  font-family: $body-font;
+}
+
+.submit-button {
+  background-color: $pink;
+  color: $background;
+  border: 1px solid #E3A67B;
+  border-radius: .25rem;
+  font-family: $body-font;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .cocktail_photo {
-  display: flex;
-  justify-content: space-between;
+  font-family: $body-font;
+  color: $background;
+}
+
+.show-image {
+  width: 600px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.show-info {
+  position: absolute;
+  padding: 20px;
+  background-color: rgba(227, 166, 123, 0.4);
+  top: 100px;
+  left: 230px;
+  p {
+    color: $background;
+  }
+  h1 {
+    color: $background;
+  }
 }

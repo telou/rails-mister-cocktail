@@ -6,19 +6,22 @@
 <% end %>
 
 
+
   <div>
-    <div class="container">
-      <p class="pink-text">Your search for <%= params[:search] %> has <%= @cocktails.length %> <%= result %>: </p>
-      <% @cocktails.each do |cocktail| %>
-        <%= link_to cocktail_path(cocktail) do %>
-          <div class="card-category">
-            <%= cl_image_tag cocktail.photo %>
-            <p class="name"><%= cocktail.name %></p>
-            <p class="link">See recipe...</p>
-          </div>
-        <% end %>
-      <% end  %>
-    </div>
+      <p class="pink-text">Your search has <%= @cocktails.length %> <%= result %>: </p>
+      <div class="container">
+        <div class="row">
+          <% @cocktails.each do |cocktail| %>
+            <div class="card-category col-4">
+              <%= link_to cocktail_path(cocktail) do %>
+                <%= cl_image_tag cocktail.photo %>
+              <p class="name highlight"><%= cocktail.name %></p>
+              <p class="link highlight">See recipe...</p>
+              <% end %>
+            </div>
+          <% end  %>
+        </div>
+      </div>
 
 
     <%= link_to new_cocktail_path do %>
