@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <h3>Add a new cocktail!</h3>
+      <div class="input-group mb-3">
+        <%= simple_form_for @cocktail do |f| %>
+          <%= f.text_field :name, class: 'form-control' %>
+          <%= f.input :photo %>
+          <%= f.input :photo_cache, as: :hidden %>
+          <div class="input-group-append">
+            <%= f.submit "add this cocktail", class: 'btn btn-primary'%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
