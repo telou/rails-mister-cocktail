@@ -1,1 +1,32 @@
 // Specific CSS for your home-page
+.home-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-family: 'Kaushan Script', cursive;
+  color: #E3A67B;
+  background: -webkit-linear-gradient(#E3A67B, #BA6339);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  padding: 5px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-all {
+  color: #E3A67B;
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+

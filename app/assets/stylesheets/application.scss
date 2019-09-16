@@ -11,117 +11,68 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "cocktails";
 
 
-.card-category {
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+body {
+  background-color: $background !important;
 }
 
-.card-text {
-  color: white;
+a {
+  text-decoration: none;
+  font-family: $body-font;
+  color: $background;
+  font-size: 25px;
+}
+
+p {
+  font-family: $body-font;
+  color: $background;
+}
+
+h1 {
+  color: $pink;
+}
+
+.pink-text {
+  color: $pink;
 }
 
 .small-box {
+  text-align: right;
   width: 320px;
+  padding: 10px
 }
 
-@media (min-width: 768px) {
-  /* show 4 items */
-  .carousel-inner .active {
-    display: block;
-  }
-.carousel-inner .active + .carousel-item {
-  position: absolute;
-    top: 0;
-    right: 150%;
-    z-index: -1;
-    display: block;
-    visibility: visible;
+.search-box {
+  display: flex;
 }
 
-.carousel-inner .active + .carousel-item + .carousel-item {
-  position: absolute;
-    top: 0;
-    right: 125%;
-    z-index: -1;
+.search-button {
     display: block;
-    visibility: visible;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: $body-font;
+    line-height: 1.5;
+    color: #E3A67B;
+    background-color: $background;
+    background-clip: padding-box;
+    border: 1px solid #E3A67B;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-left: 10px
 }
 
-.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
-  position: absolute;
-    top: 0;
-    right: 100%;
-    z-index: -1;
-    display: block;
-    visibility: visible;
+
+#search {
+  background-color: $background !important;
+  border-width: 1px;
+  border-color: $pink;
+  color: $pink;
+
 }
 
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
-    transition: none;
-  }
 
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev {
-    position: relative;
-    transform: translate3d(0, 0, 0);
-  }
-
-  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-    position: absolute;
-    top: 0;
-    right: -25%;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-  }
-
-  /* left or forward direction */
-  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-  .carousel-item-next.carousel-item-left + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-    position: relative;
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  /* farthest right hidden item must be absolue position for animations */
-  .carousel-inner .carousel-item-prev.carousel-item-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-  }
-
-  /* right or prev direction */
-  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-  .carousel-item-prev.carousel-item-right + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-    position: relative;
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-    display: block;
-    visibility: visible;
-  }
-}
 
