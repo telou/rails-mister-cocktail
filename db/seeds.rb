@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Dose.destroy_all
 Ingredient.destroy_all
 Cocktail.destroy_all
 
@@ -25,9 +26,10 @@ Ingredient.create(name: "pineapple juice")
 Ingredient.create(name: "sugar")
 Ingredient.create(name: "nutmeg")
 Ingredient.create(name: "absinthe")
+Ingredient.create(name: "vermouth")
 
 martini = Cocktail.new(name: 'Martini')
-url = 'https://images.unsplash.com/photo-1546171753-97d7676e4602?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80'
+url = 'https://images.unsplash.com/photo-1568500236751-cf62d6ef9049?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1396&q=80'
 martini.remote_photo_url = url
 martini.save
 
@@ -46,7 +48,7 @@ url = 'https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2
 stregis.remote_photo_url = url
 stregis.save
 
-lavenderandblueberry = Cocktail.new(name: 'Lavender And Blueberry Dream')
+lavenderandblueberry = Cocktail.new(name: 'Lavender & Berry')
 url = 'https://images.unsplash.com/photo-1527761939622-9119094630cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80'
 lavenderandblueberry.remote_photo_url = url
 lavenderandblueberry.save
