@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.cocktail-name {
-
-}
 
 .card-category {
   height: 250px;
@@ -38,10 +35,27 @@
 }
 
 #new_cocktail {
+  background-color: #DBC2A1;
+  color: $background;
+  padding: 20px;
+  border-radius: 20px;
+}
 
+#cocktail_name {
+  font-family: $body-font;
+}
+
+.submit-button {
+  background-color: $pink;
+  color: $background;
+  border: 1px solid #E3A67B;
+  border-radius: .25rem;
+  font-family: $body-font;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .cocktail_photo {
-  display: flex;
-  justify-content: space-between;
+  font-family: $body-font;
+  color: $background;
 }
+

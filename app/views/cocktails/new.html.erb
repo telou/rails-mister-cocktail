@@ -1,11 +1,11 @@
 <div class="container">
 
 
-      <h1>Add a new cocktail!</h1>
+      <h1>Add a new cocktail</h1>
       <p class="pink-text">You will add the ingredients on the next page.</p>
       <div class="input-group">
         <%= simple_form_for @cocktail do |f| %>
-        <%= f.text_field :name %>
+        <%= f.text_field :name, placeholder: 'Name your cocktail', class:"form-control"%>
 
           <div class="form-photo">
             <%= f.input :photo %>
@@ -13,7 +13,7 @@
           </div>
 
           <div class="row input-group-append">
-            <%= f.submit "add this cocktail", class: 'btn btn-primary'%>
+            <%= f.submit "add this cocktail", class: 'submit-button'%>
           </div>
         <% end %>
       </div>
